@@ -1,8 +1,26 @@
 <div>
   <h3>Dev's da Squadra</h3>
 
-  <button>Listar Dev's</button>
   <button>Cadastrar Dev</button>
   <button>Editar Dados</button>
-  <button>Excluir Dev</button>
+
+  <div>
+    <ol *ngFor="let dev of devs">
+      <li>
+        Id: {{ dev.id }}
+      </li>
+
+      <li>
+        [src]="{{dev.avatar}}"
+      </li>
+      
+      <li>
+        Nome: {{dev.name}}
+        <button> <span style="padding: 10px">Excluir</span> </button>
+      </li>
+
+    </ol>
+
+  </div>
+
 </div>
