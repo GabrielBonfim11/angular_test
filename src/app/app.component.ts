@@ -23,4 +23,8 @@ export class AppComponent {
       console.log(error);
     })
   }
+
+  excluirDevs(){
+
+  }
 }

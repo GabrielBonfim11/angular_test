@@ -13,4 +13,17 @@ export class DeveloperService {
   listarDevs(){
     return this.httpClient.get(`${this.SERVER_URL}`);
   }
+
+ 
+  excluirDevs(){
+
+  }
+
+  editarDevs(){
+
+  }
+
+  cadastrarDevs(){
+
+  }
 }

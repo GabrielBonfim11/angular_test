@@ -11,13 +11,17 @@
       </li>
 
       <li>
-        [src]="{{dev.avatar}}"
+        {{dev.avatar}}
       </li>
       
       <li>
         Nome: {{dev.name}}
-        <button> <span style="padding: 10px">Excluir</span> </button>
       </li>
+
+      <li>
+        <button (click)="excluirDevs()"> <span style="padding: 10px">Excluir</span> </button>
+      </li>
+
 
     </ol>
 
